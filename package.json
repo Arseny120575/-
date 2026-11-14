@@ -1,0 +1,25 @@
+{
+  "name": "14.11.2026",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node main.js",
+    "dev": "node --wath main.js",
+    "lint": "biome check",
+    "Lint:fix": "biome check --write",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf node_modules"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@biomejs/biome": "2.6.7",
+    "rimraf": "^6.1.4"
+  },
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}
