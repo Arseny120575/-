@@ -11,3 +11,12 @@ app.get("/", (_req, res) => {
 app.listen(port, () => {
     console.log('Server is listening on port ${port}');
 });
+
+app.listen(port, () => {
+    pool.query('SELECT $1::text as message', ['hi!']);
+    console.log('Server is listening on port ${PORT}');
+});
+
+app.listen(port, () => {
+pool.query('SELECT $1: :text as message', ['Hello world!']); console.log("Server is listening on port ${port}");
+});
